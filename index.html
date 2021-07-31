@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/fonts/Bauhaus93.ttf">
+  <link rel="stylesheet" href="assets/icons/style.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Universe PetShop</title>
+</head>
+<body>
+  <header id="header">
+     <nav class="nav container">
+      <div class=" left grid ">
+        <a href="#home"><img class="logo"  src="assets/logo.png" alt="Logo"></a>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="txt-nav" href="#home">Início</a></li>
+            <li><a class="txt-nav" href="#services">Serviços</a></li>
+            <li><a class="txt-nav" href="#about">Quem somos</a></li>
+            <li><a class="txt-nav" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="right">
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-x"></div>
+        <a class="btn-contatar"href="#contact">
+          Contatar
+          <span class="icon-arrow-right"></span>
+        </a>
+         
+      </div>
+     </nav>
+  </header>
+
+  <main>
+    <section class="section" id="home">
+     <div class="container grid">
+       <div class="text grid">
+          <h2 class="title">SEU TEXTO AQUI</h2>
+          <p>lorem ipsum lore ipsum lore ipsum lore ipsumlorem ipsum lore ipsum lore ipsum lore ipsumlorem ipsum lore ipsum lore ipsum lore ipsumlorem ipsum lore ipsum lore ipsum lore ipsumlorem ipsum lore ipsum lore ipsum lore ipsum</p>
+          <a class="button" href="#">Ver serviço</a>
+       </div>
+        <div class="image grid">
+          <img src="assets/cachorro.png" alt="">
+        </div>
+     </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container grid">
+        <div class="cards grid">
+          
+          <div class="card left card-equal">
+            <h4>CASTRAÇÃO</h4>
+            <div class="image">
+              <img src="assets/castracao.png" alt="Coração com uma pata dentro">
+            </div>
+        </div>
+
+        <div class="card card-diff">
+          <h4>BANHO E TOSA</h4>
+          <div class="image">
+            <img src="assets/shampoo.png" alt="Shampo para pet">
+          </div>
+          <p>Nós oferecemos um cuidado cheio de carinho e amor</p>
+        </div>
+
+        <div class="card right card-equal">
+          <h4>PRODUTOS</h4>
+          <div class="image">
+            <img src="assets/produtos.png" alt="Coração com uma pata dentro">
+          </div>
+        </div>
+        </div>
+
+      </div>
+      <div class="divider"></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container grid">
+          <div class="text">
+            <h2 class="title">QUEM SOMOS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur excepturi voluptatibus voluptas, fuga maiores perspiciatis cum sequi deleniti ad voluptatem porro delectus! Illo quo at ab harum fugit quos ea.</p>
+          </div>
+          <div class="image">
+            <div class="img-gato">
+              <img src="assets/gato.png" alt="">
+            </div>
+            <a class="button" href="#services">Ver serviços</a>
+          </div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="container grid">
+        <div class="content">
+          <h2 class="title">ENTRE EM CONTATO</h2>
+
+          <form class="form" onsubmit="return validForm()">
+            <label for="name">Nome</label>
+            <input class="input" id="name" type="text">
+  
+            <label for="phone">Telefone</label>
+            <input class="input" id="phone" type="text" maxlength="14" onkeypress="formatar('##-#-####-####',this) " >
+ 
+            <label for="email">E-mail</label>
+            <input class="input" id="email" type="text">
+  
+            <label id="message" for="">Mensagem</label>
+            <textarea id="message" cols="22" rows="10" ></textarea>
+
+            <button class="button" href="#">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container grid">
+        <div class="maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3528.9276962469075!2d-50.3256675849823!3d-27.811996382748692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e01f36ed163d31%3A0x9182d60354b8d2a0!2sCode%20Universe!5e0!3m2!1spt-BR!2sbr!4v1626896980045!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="social">
+          <h5> 
+            <span class=" icon icon-phone "></span>
+             <p> (00) 0 0000-0000 </p> 
+             </h5>
+          <h5><span class="icon icon-whatsapp"></span><p>(00) 0 0000-0000</p></h5>
+            <h5> <span class="icon icon-instagram"> </span><p> @petshop</p> </h5>
+          </div>
+      </div>
+      <p>Todos os direitos reservados - 2021</p>
+    </div>
+
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
